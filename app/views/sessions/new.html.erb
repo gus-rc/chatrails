@@ -11,23 +11,23 @@
 <div class="ui placeholder segment">
   <div class="ui two column very relaxed stackable grid">
     <div class="column">
-      <form class="ui form">
+      <%= form_for(:session, html: {class: "ui form", role: "form"}, url: login_path) do |f| %>      
         <div class="field">
-          <label>Usuario</label>
+           <%= f.label :username, "Usuario:" %>
           <div class="ui left icon input">
-            <input type="text" placeholder="Nombre de usuario">
+            <%= f.text_field :username, placeholder: "Nombre de usuario" %>
             <i class="user icon"></i>
           </div>
         </div>
         <div class="field">
-          <label>Contraseña</label>
+          <%= f.label :password, "Contraseña" %>
           <div class="ui left icon input">
-            <input type="text" placeholder="Contraseña">
+            <%= f.password_field :password, placeholder: "Contraseña" %>
             <i class="lock icon"></i>
           </div>
         </div>
-        <button class="ui orange submit button">Iniciar sesión</button>
-      </form>
+        <%= f.button "Iniciar sesión", class: "ui orange submit button" %>    
+      <% end %>  
     </div>
     <div class="middle aligned column">
       <div class="ui big orange disabled button">

@@ -8,14 +8,18 @@
         <div class="ui dropdown item">
         Cuenta <i class="dropdown icon"></i>
         <div class="menu">
-            <a class="item">Cerrar sesión</a>
-            <a class="item">Iniciar sesión</a>
-            <%= link_to "Regístrate", login_path, class: "item" %>
+            <% if logged_in? %>
+                <%= link_to "Cerrar sesión", logout_path, method: :delete, class: "item" %>
+            <% else %>
+                <%= link_to "Iniciar sesión", login_path, class: "item" %>
+            <% end %>          
         </div>
         </div>
-        <div class="item">
-            <div class="ui primary button">Regístrate</div>
-        </div>
+        <% if !logged_in? %>
+            <div class="item">
+            <%= link_to "Iniciar sesión", login_path, class: "ui primary button" %>
+            </div>
+        <% end %>
     </div>
     </div>     
 </div>
