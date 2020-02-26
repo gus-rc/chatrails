@@ -30,6 +30,12 @@ gem 'jquery-rails'
 # Use ActiveModel has_secure_password
  gem 'bcrypt', '~> 3.1.7'
  gem 'hirb'
+
+ 
+#Para corregir alertas de seguridad
+gem "nokogiri", ">= 1.10.8"
+
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 

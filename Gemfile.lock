@@ -202,6 +202,7 @@ DEPENDENCIES
   hirb
   jbuilder (~> 2.5)
   jquery-rails
+  nokogiri (>= 1.10.8)
   puma (~> 3.11)
   rails (~> 5.2.4, >= 5.2.4.1)
   sass-rails (~> 5.0)
