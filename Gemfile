@@ -11,6 +11,11 @@ gem 'sqlite3'
 gem "puma", ">= 3.12.4"
 
 
+# Para reparar falla de seguridad
+gem "actionview", ">= 5.2.4.2"
+
+
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
