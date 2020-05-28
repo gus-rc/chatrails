@@ -8,11 +8,16 @@ gem 'rails', '~> 5.2.4', '>= 5.2.4.1'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server
-gem "puma", ">= 3.12.4"
-
+gem "puma", ">= 4.3.5"
 
 # Para reparar falla de seguridad
 gem "actionview", ">= 5.2.4.2"
+
+#Para reparar falla de seguridad
+gem "actionpack", ">= 5.2.4.3"
+
+# para reparar  falla de seguridad
+gem "activesupport", ">= 5.2.4.3"
 
 
 
@@ -38,13 +43,14 @@ gem 'jquery-rails'
  gem 'bcrypt', '~> 3.1.7'
  gem 'hirb'
 
- 
+
 #Para corregir alertas de seguridad
 gem "nokogiri", ">= 1.10.8"
 
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
+gem "activestorage", ">= 5.2.4.3"
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
