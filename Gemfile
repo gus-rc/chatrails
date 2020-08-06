@@ -11,7 +11,7 @@ gem 'sqlite3'
 gem "puma", ">= 4.3.5"
 
 # Para reparar falla de seguridad
-gem "actionview", ">= 5.2.4.2"
+gem "actionview", ">= 5.2.4.3"
 
 #Para reparar falla de seguridad
 gem "actionpack", ">= 5.2.4.3"
