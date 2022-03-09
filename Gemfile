@@ -11,13 +11,13 @@ gem 'sqlite3'
 gem "puma", ">= 4.3.11"
 
 # Para reparar falla de seguridad
-gem "actionview", ">= 5.2.6.2"
+gem "actionview", ">= 5.2.4.6"
 
 #Para reparar falla de seguridad
-gem "actionpack", ">= 5.2.6.2"
+gem "actionpack", ">= 5.2.4.6"
 
 # para reparar  falla de seguridad
-gem "activesupport", ">= 5.2.6.2"
+gem "activesupport", ">= 5.2.4.6"
 
 
 
@@ -50,7 +50,7 @@ gem "nokogiri", ">= 1.13.2"
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
-gem "activestorage", ">= 5.2.6.2"
+gem "activestorage", ">= 5.2.4.6"
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
